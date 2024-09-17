@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<temp &le; 0.424<br/>squared_error = 3800974.992<br/>samples = 433<br/>value = 4487.261>, fillcolor="#eca36f"] ;
+1 [label=<temp &le; 0.255<br/>squared_error = 2114583.671<br/>samples = 173<br/>value = 2961.526>, fillcolor="#f3c7a6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<weathersit_3 &le; 0.5<br/>squared_error = 501797.035<br/>samples = 45<br/>value = 1638.178>, fillcolor="#fae5d7"] ;
+1 -> 2 ;
+3 [label=<squared_error = 442324.537<br/>samples = 42<br/>value = 1717.714>, fillcolor="#f9e3d4"] ;
+2 -> 3 ;
+4 [label=<squared_error = 5940.222<br/>samples = 3<br/>value = 524.667>, fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label=<season_winter &le; 0.5<br/>squared_error = 1849457.054<br/>samples = 128<br/>value = 3426.766>, fillcolor="#f1bc96"] ;
+1 -> 5 ;
+6 [label=<squared_error = 1778526.271<br/>samples = 70<br/>value = 3925.014>, fillcolor="#efb083"] ;
+5 -> 6 ;
+7 [label=<squared_error = 1273845.728<br/>samples = 58<br/>value = 2825.431>, fillcolor="#f4caab"] ;
+5 -> 7 ;
+8 [label=<hum &le; 0.808<br/>squared_error = 2343514.641<br/>samples = 260<br/>value = 5502.462>, fillcolor="#e78c4a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<windspeed &le; 0.196<br/>squared_error = 2067917.196<br/>samples = 229<br/>value = 5718.38>, fillcolor="#e68742"] ;
+8 -> 9 ;
+10 [label=<squared_error = 1850559.803<br/>samples = 147<br/>value = 5972.782>, fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label=<squared_error = 2133553.29<br/>samples = 82<br/>value = 5262.317>, fillcolor="#e89153"] ;
+9 -> 11 ;
+12 [label=<weathersit_3 &le; 0.5<br/>squared_error = 1490931.022<br/>samples = 31<br/>value = 3907.452>, fillcolor="#efb184"] ;
+8 -> 12 ;
+13 [label=<squared_error = 1020699.623<br/>samples = 24<br/>value = 4303.708>, fillcolor="#eda876"] ;
+12 -> 13 ;
+14 [label=<squared_error = 719021.837<br/>samples = 7<br/>value = 2548.857>, fillcolor="#f5d0b5"] ;
+12 -> 14 ;
+}
